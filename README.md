@@ -1,6 +1,7 @@
 # Full Stack CRUD built using react, nest, mongodb
 
 ![Alt text](client\public\demo-1.png?raw=true "demo-1")
+<img src="client\public\demo-1.png" alt="Alt text" title="Optional title">
 
 ![Alt text](client\public\demo-2.png?raw=true "demo-2")
 

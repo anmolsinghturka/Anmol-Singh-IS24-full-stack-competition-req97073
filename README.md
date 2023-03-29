@@ -1,13 +1,13 @@
 # Full Stack CRUD built using react, nest, mongodb
 
-![Alt text](client\public\demo-1.png?raw=true "demo-1")
 <img src="client\public\demo-1.png" alt="Alt text" title="Optional title">
 
-![Alt text](client\public\demo-2.png?raw=true "demo-2")
+<img src="client\public\demo-2.png" alt="Alt text" title="Optional title">
 
-![Alt text](client\public\demo-3.png?raw=true "demo-3")
+<img src="client\public\demo-3.png" alt="Alt text" title="Optional title">
 
-![Alt text](client\public\demo-4.png?raw=true "demo-4")
+<img src="client\public\demo-4.png" alt="Alt text" title="Optional title">
+
 
 # 1- Backend (5000 port)
 

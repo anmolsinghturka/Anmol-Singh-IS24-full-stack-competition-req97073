@@ -2,7 +2,7 @@
     "name": "client",
     "version": "0.1.0",
     "private": true,
-    "proxy": "http://localhost:5000/",
+    "proxy": "https://anmolsingh-api.onrender.com/",
     "dependencies": {
         "@chakra-ui/progress": "^2.1.6",
         "@chakra-ui/react": "^2.3.2",

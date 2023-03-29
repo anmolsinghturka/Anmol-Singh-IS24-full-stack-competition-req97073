@@ -1,4 +1,4 @@
-# Full Stack CRUD built using react, nest, mongodb
+# Full Stack CRUD operations built using React, Nest, Mongodb
 
 <img src="client\public\demo-1.png" alt="Alt text" title="Optional title">
 

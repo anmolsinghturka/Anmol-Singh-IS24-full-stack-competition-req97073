@@ -419,6 +419,15 @@ function App() {
                 </Box>
                 <DrawerExample />
             </Container>
+            <div style={{ textAlign: "center" }}>
+                <Typography.Title level={4} style={{ margin: 0 }}>
+                    Source code available at&nbsp;
+                    <a href="https://github.com/anmolsinghturka/Anmol-Singh-IS24-full-stack-competition-req97073" target="_blank" rel="noopener noreferrer">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style={{ display: "inline-block", verticalAlign: "middle", width: "40px" }} />
+                    </a>
+                    &nbsp;Backend API Swagger Documentation at https://anmolsingh-api.onrender.com/api/api-docs &nbsp;
+                </Typography.Title>
+            </div>
         </div >
     );
 }

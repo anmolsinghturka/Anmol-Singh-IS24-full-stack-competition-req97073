@@ -258,7 +258,7 @@ function App() {
 
     const handleEditClick = async (id) => {
         try {
-            const res = await axios.get(`/api/product/monogoid/${id}`);
+            const res = await axios.get(`https://anmolsingh-api.onrender.com/api/product/monogoid/${id}`);
             setProduct(res.data);
         } catch (err) {
             console.log(err.response.data.error);

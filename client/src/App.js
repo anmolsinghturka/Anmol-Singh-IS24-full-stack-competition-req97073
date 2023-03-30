@@ -268,6 +268,12 @@ function App() {
         }
     };
 
+    const usersWithKey = users.map(user => ({
+        ...user,
+        key: user._id
+    }));
+
+
     const columns = [
         {
             title: '',
@@ -409,7 +415,7 @@ function App() {
                             />
                         </div>
                     </Box>
-                    <Table columns={columns} dataSource={users} />
+                    <Table columns={columns} dataSource={usersWithKey} />
                 </Box>
                 <DrawerExample />
             </Container>

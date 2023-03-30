@@ -34,4 +34,10 @@ docker-compose up
 http://localhost:5000/api/api-docs
 ```
 
+hosted on live server at
+
+```
+https://anmolsingh-api.onrender.com/api/api-docs
+```
+
 

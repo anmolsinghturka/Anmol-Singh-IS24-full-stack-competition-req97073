@@ -234,6 +234,7 @@ function App() {
             Add(values, setForm);
         }
         setOpen(false);
+        FetchUsers();
     };
 
     useEffect(() => {

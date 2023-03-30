@@ -1,6 +1,6 @@
 # Full Stack CRUD operations built using React, Nest, Mongodb
 
-# Live at https://anmolsingh.onrender.com/
+# Deployed at https://anmolsingh.onrender.com/
 
 <img src="client\public\demo-1.png" alt="Alt text" title="Optional title">
 

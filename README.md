@@ -2,6 +2,8 @@
 
 # Deployed at https://anmolsingh.onrender.com/
 
+# API Documentation https://anmolsingh-api.onrender.com/api/api-docs 
+
 <img src="client\public\demo-1.png" alt="Alt text" title="Optional title">
 
 <img src="client\public\demo-2.png" alt="Alt text" title="Optional title">

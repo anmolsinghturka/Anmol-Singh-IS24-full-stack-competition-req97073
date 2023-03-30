@@ -416,13 +416,9 @@ function App() {
                         </div>
                     </Box>
 
-
-
                     <Spin tip="Loading" spinning={loading}>
                         <Table columns={columns} dataSource={usersWithKey} />
                     </Spin>
-
-
 
                 </Box>
                 <DrawerExample />

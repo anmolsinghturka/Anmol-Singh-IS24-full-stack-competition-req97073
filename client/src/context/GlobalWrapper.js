@@ -7,13 +7,16 @@ export default function Wrapper({ children }) {
     const [users, setUsers] = useState([]);
     const [product, setProduct] = useState({});
     const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false);
     const { isOpen, onOpen, onClose } = useDisclosure();
+
     const toast = useToast();
 
     useEffect(() => {
     }, [product]);
 
     const FetchUsers = () => {
+        setLoading(true);
         axios
             .get('https://anmolsingh-api.onrender.com/api/product')
             .then((res) => {
@@ -21,6 +24,8 @@ export default function Wrapper({ children }) {
             })
             .catch((err) => {
                 console.log(err.reponse.data);
+            }).finally(() => {
+                setLoading(false);
             });
     };
 
@@ -132,6 +137,8 @@ export default function Wrapper({ children }) {
                 setErrors,
                 product,
                 setProduct,
+                loading,
+                setLoading
             }}
         >
             {children}

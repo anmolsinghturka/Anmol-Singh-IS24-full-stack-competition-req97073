@@ -6,7 +6,7 @@ import {
 } from '@chakra-ui/react';
 import './index.css';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
-import { Avatar, Popconfirm, Typography, Button, DatePicker, Form, Input, Modal, Radio, Table, Tag } from 'antd';
+import { Avatar, Popconfirm, Typography, Button, DatePicker, Form, Input, Modal, Radio, Table, Tag, Spin } from 'antd';
 import { FormControl } from '@chakra-ui/react';
 import { useContext, useEffect, useState, React } from 'react';
 import { GlobalContext } from './context/GlobalWrapper';
@@ -210,7 +210,7 @@ const CollectionCreateForm = ({ open, onCreate, onCancel, product, setProduct })
 
 
 function App() {
-    const { FetchUsers, Delete, FindOne, SearchScrumMaster, SearchDeveloper, users, Add, Update, product, setProduct } = useContext(GlobalContext);
+    const { FetchUsers, Delete, FindOne, SearchScrumMaster, SearchDeveloper, users, Add, Update, product, setProduct, loading, setLoading } = useContext(GlobalContext);
     const [query, setQuery] = useState('');
     const [developerQuery, setDeveloperQuery] = useState('');
     const [form, setForm] = useState({});
@@ -415,7 +415,15 @@ function App() {
                             />
                         </div>
                     </Box>
-                    <Table columns={columns} dataSource={usersWithKey} />
+
+
+
+                    <Spin tip="Loading" spinning={loading}>
+                        <Table columns={columns} dataSource={usersWithKey} />
+                    </Spin>
+
+
+
                 </Box>
                 <DrawerExample />
             </Container>

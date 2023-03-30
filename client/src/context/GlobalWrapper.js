@@ -15,7 +15,7 @@ export default function Wrapper({ children }) {
 
     const FetchUsers = () => {
         axios
-            .get('/api/product')
+            .get('https://anmolsingh-api.onrender.com/api/product')
             .then((res) => {
                 setUsers(res.data);
             })
@@ -26,7 +26,7 @@ export default function Wrapper({ children }) {
 
     const SearchScrumMaster = (query) => {
         axios
-            .post(`/api/product/searchscrummaster?key=${query}`)
+            .post(`https://anmolsingh-api.onrender.com/api/product/searchscrummaster?key=${query}`)
             .then((res) => {
                 setUsers(res.data);
             })
@@ -37,7 +37,7 @@ export default function Wrapper({ children }) {
 
     const SearchDeveloper = (query) => {
         axios
-            .post(`/api/product/searchdeveloper?name=${query}`)
+            .post(`https://anmolsingh-api.onrender.com/api/product/searchdeveloper?name=${query}`)
             .then((res) => {
                 setUsers(res.data);
             })
@@ -48,7 +48,7 @@ export default function Wrapper({ children }) {
 
     const Delete = (productId) => {
         axios
-            .delete(`/api/product/${productId}`)
+            .delete(`https://anmolsingh-api.onrender.com/api/product/${productId}`)
             .then((res) => {
                 setUsers(users.filter((u) => u.productId !== productId));
                 toast({
@@ -65,7 +65,7 @@ export default function Wrapper({ children }) {
 
     const Add = (form, setForm) => {
         axios
-            .post('/api/product', form)
+            .post('https://anmolsingh-api.onrender.com/api/product', form)
             .then((res) => {
                 setUsers([...users, res.data]);
                 toast({
@@ -85,7 +85,7 @@ export default function Wrapper({ children }) {
 
     const FindOne = async (id) => {
         await axios
-            .get(`/api/product/monogoid/${id}`)
+            .get(`https://anmolsingh-api.onrender.com/api/product/monogoid/${id}`)
             .then((res) => {
                 if (res.data) {
                     setProduct(res.data);
@@ -98,7 +98,7 @@ export default function Wrapper({ children }) {
 
     const Update = (form, id) => {
         axios
-            .put(`/api/product/${id}`, form)
+            .put(`https://anmolsingh-api.onrender.com/api/product/${id}`, form)
             .then((res) => {
                 toast({
                     title: 'User Updated',

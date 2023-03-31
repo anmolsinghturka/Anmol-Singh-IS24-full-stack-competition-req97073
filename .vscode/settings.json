@@ -1,0 +1,14 @@
+{
+    "azureFunctions.deploySubpath": ".",
+    "azureFunctions.preDeployTask": "npm prune (functions)",
+    "azureFunctions.functionApp": "anmolsingh-crud",
+    "azureFunctions.subscriptionId": "4f9e5f91-3280-46f0-ac9b-6fd6e992b8b8",
+    "azureFunctions.resourceGroup": "asp-dot-net-core-test",
+    "azureFunctions.deploymentType": "zip",
+    "azureFunctions.hostStartCommand": "npm run start:prod",
+    "azureFunctions.postDeployTask": "npm install (functions)",
+    "azureFunctions.projectLanguage": "TypeScript",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectLanguageModel": 3
+}

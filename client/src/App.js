@@ -416,7 +416,7 @@ function App() {
                         </div>
                     </Box>
 
-                    <Spin tip="Starting Backend Server. Startup need 30s. " spinning={loading}>
+                    <Spin tip="Starting Backend Server. Startup need 2min. " spinning={loading}>
                         <Table columns={columns} dataSource={usersWithKey} />
                     </Spin>
 
